@@ -12,6 +12,7 @@ const Searchbar = ({ onSubmit }) => {
 
   const onHandlerFormSubmit = async (values, actions) => {
     if (values.input.trim() === '') {
+      actions.resetForm();
       toast.error('Enter the name of the image, please!');
       return;
     }

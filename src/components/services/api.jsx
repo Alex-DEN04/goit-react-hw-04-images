@@ -14,5 +14,5 @@ export const getImages = async (imageName, page) => {
       page,
     },
   });
-  return (await response).data.hits;
+  return await response;
 };
